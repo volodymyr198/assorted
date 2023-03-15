@@ -1,15 +1,22 @@
 import { NavLink } from 'react-router-dom';
 
+import useLang from 'hooks/useLang';
+import locale from './locale.json';
 import './navigation.scss';
 
 const Navigation = () => {
+    const { lang } = useLang();
+
+    const home = locale.home[lang];
+    const quiz = locale.quiz[lang];
+
     return (
         <nav className="nav">
             <NavLink className="link" to="/">
-                Home
+                {home}
             </NavLink>
             <NavLink className="link" to="/quiz">
-                Quiz
+                {quiz}
             </NavLink>
         </nav>
     );

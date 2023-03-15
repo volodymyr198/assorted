@@ -11,7 +11,7 @@ const Result = ({ correct }) => {
             <h2>
                 Ви відповіли вірно {correct} з {questions.length} разів!
             </h2>
-            <a href="/quiz">
+            <a href="/assorted/quiz">
                 <button>Спробувати ще</button>
             </a>
         </div>
