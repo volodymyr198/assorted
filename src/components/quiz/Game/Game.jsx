@@ -1,4 +1,4 @@
-import { questions } from '../../../pages/QuizPage/questions';
+import { questions } from '../../../pages/QuizPage/questions-ua';
 import './game.scss';
 
 const Game = ({ getQuestion, onClickVariant, question }) => {
